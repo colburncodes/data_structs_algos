@@ -32,8 +32,13 @@ function containsCommonItem2(arr1, arr2) {
   return false;
 }
 
+function containsCommonItem3(arr1, arr2) {
+  return arr1.some((item) => arr2.includes(item));
+}
+
 const array1 = ["a", "b", "c", "x"];
 const array2 = ["z", "y", "a"];
 
 console.log(containsCommonItem(array1, array2));
 console.log(containsCommonItem2(array1, array2));
+console.log(containsCommonItem3(array1, array2));
