@@ -104,6 +104,7 @@ function findPassableLanes(board) {
     let allZeros = true;
 
     for (let j = 0; j < len; j++) {
+      console.log("Board ", board[j][i]);
       if (board[j][i].includes("+")) {
         allZeros = false;
       }
